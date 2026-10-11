@@ -184,10 +184,7 @@ export function IntegrationsSection() {
             ))}
           </div>
 
-          <a href="#pricing" className="group inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-foreground transition-colors">
-            View Pricing
-            <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-          </a>
+
         </div>
       </div>
     </section>

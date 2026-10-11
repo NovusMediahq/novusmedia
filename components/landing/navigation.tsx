@@ -10,7 +10,6 @@ const navLinks = [
   { name: "How We Work",   href: "#how-it-works"  },
   { name: "Tools",         href: "#integrations"  },
   { name: "Why Us",        href: "#security"      },
-  { name: "Pricing",       href: "#pricing"       },
 ];
 
 export function Navigation() {
@@ -67,9 +66,6 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#pricing" className={`transition-all duration-500 ${isScrolled ? "text-xs text-foreground/70 hover:text-foreground" : "text-sm text-white/70 hover:text-white"}`}>
-              View Plans
-            </a>
             <Link href="/inquiry">
               <Button
                 size="sm"
@@ -133,14 +129,6 @@ export function Navigation() {
           }`}
           style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
-            <Button 
-              variant="outline" 
-              className="flex-1 rounded-full h-14 text-base"
-              onClick={() => setIsMobileMenuOpen(false)}
-              asChild
-            >
-              <a href="#pricing">View Plans</a>
-            </Button>
             <Button 
               className="flex-1 bg-foreground text-background rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
