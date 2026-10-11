@@ -108,14 +108,6 @@ export function SecuritySection() {
               ))}
             </div>
             
-            <div className="relative z-10">
-              <span className="font-mono text-sm text-muted-foreground">Our Track Record</span>
-              <div className="mt-8">
-                <span className="text-7xl lg:text-8xl font-display">50+</span>
-                <span className="block text-muted-foreground mt-2">Premium projects delivered</span>
-              </div>
-            </div>
-            
             {/* Certification badges */}
             <div className="absolute bottom-8 left-8 right-8 flex flex-wrap gap-2">
               {certifications.map((cert, index) => (

@@ -36,7 +36,7 @@ const plans = [
   {
     name: "Scale",
     description: "Perfect for: Established SaaS & AI brands",
-    price: { monthly: contact sales, annual: 999 },
+    price: { monthly: "Contact Sales", annual: "Contact Sales" },
     features: [
       "12+ custom motion graphics videos / month",
       "Website, ads & social media content",

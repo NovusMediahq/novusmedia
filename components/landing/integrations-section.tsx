@@ -174,7 +174,6 @@ export function IntegrationsSection() {
         }`}>
           <div className="flex flex-wrap gap-12">
             {[
-              { value: "50+", label: "Projects Delivered" },
               { value: "100%", label: "Custom Built" },
               { value: "6", label: "Industry Tools" },
             ].map((stat) => (
