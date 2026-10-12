@@ -21,7 +21,7 @@ const works = [
   {
     title: "Brand Launch Reel",
     category: "Motion Spot",
-    videoUrl: "https://res.cloudinary.com/t9mizwob/video/upload/v1785234538/Mobile_App_Flow_bnzqo7.mp4",
+    videoUrl: "/videos/brand-launch-reel.mp4",
   },
   {
     title: "AI Feature Walkthrough",

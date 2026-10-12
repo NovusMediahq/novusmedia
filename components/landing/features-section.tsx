@@ -7,7 +7,6 @@ const features = [
     number: "01",
     title: "UI & Product Motion",
     description: "Transform static UI and product features into smooth, high-converting motion graphics.",
-    stats: { value: "50+", label: "projects delivered" },
   },
   {
     number: "02",
@@ -194,10 +193,6 @@ export function FeaturesSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-md mb-8">
                   {features[0].description}
                 </p>
-                <div>
-                  <span className="text-5xl lg:text-6xl font-display">{features[0].stats.value}</span>
-                  <span className="block text-sm text-muted-foreground font-mono mt-2">{features[0].stats.label}</span>
-                </div>
               </div>
             </div>
 

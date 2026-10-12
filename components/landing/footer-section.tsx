@@ -10,12 +10,6 @@ const footerLinks = {
     { name: "Brand Identity Assets", href: "#features" },
     { name: "How We Work", href: "#how-it-works" },
   ],
-  Packages: [
-    { name: "Starter — $400", href: "#pricing" },
-    { name: "Growth — $900", href: "#pricing" },
-    { name: "Scale — Custom", href: "#pricing" },
-    { name: "Start a Project", href: "/inquiry" },
-  ],
   Company: [
     { name: "About", href: "/about" },
     { name: "Portfolio", href: "#our-work" },
