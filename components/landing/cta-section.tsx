@@ -58,7 +58,7 @@ export function CtaSection() {
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
-                  Join SaaS and tech brands using Novus Media to convert with premium motion design.
+                  Work directly with a founder-led studio building premium motion design for SaaS, AI, and B2B tech brands.
                   Let&apos;s build something remarkable together.
                 </p>
 

@@ -25,12 +25,10 @@ const securityFeatures = [
   {
     icon: Users,
     title: "Dedicated Communication",
-    description: "Direct access to your creative team throughout every project.",
+    description: "Direct access to the founder throughout every project.",
     image: "/images/permissions.jpg",
   },
 ];
-
-const certifications = ["After Effects", "Cinema 4D", "Figma", "Blender"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -90,42 +88,9 @@ export function SecuritySection() {
         </div>
 
         {/* Main content */}
-        <div className="grid lg:grid-cols-12 gap-6">
-          {/* Large visual card */}
-          <div className={`lg:col-span-7 relative p-8 lg:p-12 border border-foreground/10 min-h-[400px] overflow-hidden transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}>
-            {/* Dynamic feature image with cross-fade — desktop only */}
-            <div className="absolute inset-0 pointer-events-none items-center justify-end hidden lg:flex">
-              {securityFeatures.map((feature, index) => (
-                <img
-                  key={feature.image}
-                  src={feature.image}
-                  alt={feature.title}
-                  className="absolute h-3/4 w-3/4 object-contain object-right transition-opacity duration-500"
-                  style={{ opacity: activeFeature === index ? 0.85 : 0 }}
-                />
-              ))}
-            </div>
-            
-            {/* Certification badges */}
-            <div className="absolute bottom-8 left-8 right-8 flex flex-wrap gap-2">
-              {certifications.map((cert, index) => (
-                <span
-                  key={cert}
-                  className={`px-3 py-1 border border-foreground/10 text-xs font-mono text-muted-foreground transition-all duration-500 ${
-                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                  }`}
-                  style={{ transitionDelay: `${index * 100 + 300}ms` }}
-                >
-                  {cert}
-                </span>
-              ))}
-            </div>
-          </div>
-
+        <div className="flex flex-col gap-6">
           {/* Feature cards stack */}
-          <div className="lg:col-span-5 flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             {securityFeatures.map((feature, index) => (
               <div
                 key={feature.title}

@@ -43,7 +43,7 @@ export function IntegrationsSection() {
         <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto transition-all duration-1000 delay-100 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          Industry-standard motion &amp; design tools. Every project is crafted using the same software trusted by top studios worldwide.
+          Built with precision and polish. Every frame is designed to make your product easier to understand and more compelling to watch.
         </p>
       </div>
 
@@ -67,7 +67,6 @@ export function IntegrationsSection() {
           <div className="flex flex-wrap gap-12">
             {[
               { value: "100%", label: "Custom Built" },
-              { value: "6", label: "Industry Tools" },
             ].map((stat) => (
               <div key={stat.label} className="flex items-baseline gap-3">
                 <span className="text-3xl font-display">{stat.value}</span>
