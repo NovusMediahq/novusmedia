@@ -25,12 +25,10 @@ const securityFeatures = [
   {
     icon: Users,
     title: "Dedicated Communication",
-    description: "Direct access to your creative team throughout every project.",
+    description: "Direct access to the founder throughout every project.",
     image: "/images/permissions.jpg",
   },
 ];
-
-const certifications = ["After Effects", "Cinema 4D", "Figma", "Blender"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -109,19 +107,7 @@ export function SecuritySection() {
             </div>
             
             {/* Certification badges */}
-            <div className="absolute bottom-8 left-8 right-8 flex flex-wrap gap-2">
-              {certifications.map((cert, index) => (
-                <span
-                  key={cert}
-                  className={`px-3 py-1 border border-foreground/10 text-xs font-mono text-muted-foreground transition-all duration-500 ${
-                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                  }`}
-                  style={{ transitionDelay: `${index * 100 + 300}ms` }}
-                >
-                  {cert}
-                </span>
-              ))}
-            </div>
+            <div className="absolute bottom-8 left-8 right-8 flex flex-wrap gap-2" />
           </div>
 
           {/* Feature cards stack */}
